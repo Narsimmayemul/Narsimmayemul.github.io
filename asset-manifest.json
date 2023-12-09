@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0a32a437.css",
+    "main.js": "/static/js/main.e95b0b95.js",
+    "static/media/Boat.png": "/static/media/Boat.8f6406e7d2260fa8290e.png",
+    "static/media/glosure.png": "/static/media/glosure.29a688f7db9e97b33765.png",
+    "static/media/MineWine.png": "/static/media/MineWine.168e60d1c2a32c2e35ff.png",
+    "static/media/NarsimmaYemul.pdf": "/static/media/NarsimmaYemul.c5f506508775b0e683ad.pdf",
+    "static/media/newPic.jpg": "/static/media/newPic.c2f58788ee8ef0def6e4.jpg",
+    "index.html": "/index.html",
+    "main.0a32a437.css.map": "/static/css/main.0a32a437.css.map",
+    "main.e95b0b95.js.map": "/static/js/main.e95b0b95.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a32a437.css",
+    "static/js/main.e95b0b95.js"
+  ]
+}
