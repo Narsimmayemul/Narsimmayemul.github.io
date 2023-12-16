@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import resume from "../resume/NarsimmaYemul.pdf"
+import resume from "../resume/Narsimma_Yemul.pdf"
 import AOS from "aos";
 
 export default function About() {
 
   const handleDownload = () => {
-    window.open("https://drive.google.com/u/0/uc?id=11wPk03sPlCPJdtnfbsd1ZeNtBz8CAnFh&export=download", '_blank');
+    window.open("https://drive.google.com/u/0/uc?id=1lttIsdkiqatya-694UEihYHUWWeSUWqk&export=download", '_blank');
   };
 
   useEffect(() => {

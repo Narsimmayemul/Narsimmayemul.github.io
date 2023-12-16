@@ -1,10 +1,10 @@
-import resume from '../resume/NarsimmaYemul.pdf'
+import resume from '../resume/Narsimma_Yemul.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar({ handleClick, boolean }) {
 
   const handleDownload = () => {
-    window.open('https://drive.google.com/file/d/11wPk03sPlCPJdtnfbsd1ZeNtBz8CAnFh/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1lttIsdkiqatya-694UEihYHUWWeSUWqk/view?usp=sharing', '_blank');
   };
 
   // const topwindows = () => {
