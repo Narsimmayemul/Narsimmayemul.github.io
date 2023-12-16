@@ -44,6 +44,8 @@ export const Github = () => {
           src="https://github-readme-streak-stats.herokuapp.com?user=Narsimmayemul&theme=neon&border_radius=2.7&date_format=M%20j%5B%2C%20Y%5D"
           alt="Bharat-Shaw"
         />
+        <img src="https://github.com/users/Narsimmayemul/contributions" alt="GitHub Contributions" />
+
       </div>
     </section>
   );
