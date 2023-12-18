@@ -9,8 +9,10 @@ export default function Projects() {
   const [projects, setProjects] = useState(getProjects());
 
   useEffect(() => {
+    
     AOS.init();
     AOS.refresh();
+
   }, []);
 
   return (
@@ -56,6 +58,7 @@ export default function Projects() {
               </div>
             </div>
           ))}
+
           <div style={{textAlign:"center",marginTop:'1.5rem' ,paddingTop:"10px"}}>
           </div>
         </div>
