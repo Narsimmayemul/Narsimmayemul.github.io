@@ -7,12 +7,6 @@ export default function Navbar({ handleClick, boolean }) {
     window.open('https://drive.google.com/file/d/1lttIsdkiqatya-694UEihYHUWWeSUWqk/view?usp=sharing', '_blank');
   };
 
-  // const topwindows = () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //   });
-  // }
-
   return (
     <nav id="nav-menu" onClick={handleClick}>
       <div id="logo-nav">
@@ -59,10 +53,12 @@ export default function Navbar({ handleClick, boolean }) {
           </a>
         </li>
       </ul>
+
+
       <a 
       href={resume} 
       onClick={handleDownload} 
-      rel="noreferrer" download={'Narsimma_Yemul_Resume'} id="resume-button-1" className="contact-button nav-link resume resume-button second-btn">
+      rel="noreferrer" download={'Narsimma_Yemul_Resume '} id="resume-button-1" className="contact-button nav-link resume resume-button second-btn">
         Resume</a>
     </nav>
   );
