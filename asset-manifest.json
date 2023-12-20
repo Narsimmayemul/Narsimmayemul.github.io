@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a32a437.css",
+    "main.css": "/static/css/main.77a772e0.css",
     "main.js": "/static/js/main.e226635b.js",
     "static/media/Boat.png": "/static/media/Boat.8f6406e7d2260fa8290e.png",
     "static/media/glosure.png": "/static/media/glosure.29a688f7db9e97b33765.png",
@@ -8,11 +8,11 @@
     "static/media/Narsimma_Yemul.pdf": "/static/media/Narsimma_Yemul.457c789d7c31deb19df2.pdf",
     "static/media/newPic.jpg": "/static/media/newPic.c2f58788ee8ef0def6e4.jpg",
     "index.html": "/index.html",
-    "main.0a32a437.css.map": "/static/css/main.0a32a437.css.map",
+    "main.77a772e0.css.map": "/static/css/main.77a772e0.css.map",
     "main.e226635b.js.map": "/static/js/main.e226635b.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a32a437.css",
+    "static/css/main.77a772e0.css",
     "static/js/main.e226635b.js"
   ]
 }
