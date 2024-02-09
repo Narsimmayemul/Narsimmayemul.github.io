@@ -1,19 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.0a32a437.css",
-    "main.js": "/static/js/main.e8c4203a.js",
+    "main.css": "/static/css/main.f59917c0.css",
+    "main.js": "/static/js/main.9b6b4c89.js",
     "static/media/Boat.png": "/static/media/Boat.8f6406e7d2260fa8290e.png",
     "static/media/glosure.png": "/static/media/glosure.29a688f7db9e97b33765.png",
     "static/media/MineWine.png": "/static/media/MineWine.168e60d1c2a32c2e35ff.png",
-    "static/media/Narsimma_Yemul.pdf": "/static/media/Narsimma_Yemul.457c789d7c31deb19df2.pdf",
-    "static/media/Narsimma_Yemul_Resume 1.pdf": "/static/media/Narsimma_Yemul_Resume 1.3c72a57cfed221aae60a.pdf",
-    "static/media/newPic.jpg": "/static/media/newPic.c2f58788ee8ef0def6e4.jpg",
+    "static/media/new.png": "/static/media/new.2b050d7291695faa8bb9.png",
+    "static/media/NarsimmaYemul.pdf": "/static/media/NarsimmaYemul.c5f506508775b0e683ad.pdf",
     "index.html": "/index.html",
-    "main.0a32a437.css.map": "/static/css/main.0a32a437.css.map",
-    "main.e8c4203a.js.map": "/static/js/main.e8c4203a.js.map"
+    "main.f59917c0.css.map": "/static/css/main.f59917c0.css.map",
+    "main.9b6b4c89.js.map": "/static/js/main.9b6b4c89.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a32a437.css",
-    "static/js/main.e8c4203a.js"
+    "static/css/main.f59917c0.css",
+    "static/js/main.9b6b4c89.js"
   ]
 }
