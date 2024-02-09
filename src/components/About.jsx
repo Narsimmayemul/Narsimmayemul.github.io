@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import resume from "../resume/Narsimma_Yemul.pdf"
+import resume from "../resume/NarsimmaYemul.pdf"
 import AOS from "aos";
 
 export default function About() {
 
   const handleDownload = () => {
-    window.open("https://drive.usercontent.google.com/u/0/uc?id=1Ur6FeFg2nZI6H2CrS94bD9UmdyZ8yjAw&export=download", '_blank');
+    window.open("https://drive.google.com/u/0/uc?id=11wPk03sPlCPJdtnfbsd1ZeNtBz8CAnFh&export=download", '_blank');
   };
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function About() {
       </h1>
       <div>
         <div data-aos="fade-up" className=" first">
-          <p id="user-detail-intro">
+          <p id="user-detail-intro" style={{color:"white"}}>
           Welcome to my coding realm, where I transform coffee into lines of code! <p style={{ display: 'inline-block' }} className="sauce">Me, Narsimma</p>
           , a proficient full stack web developer. 
           My expertise spans across HTML5, CSS3, JavaScript, ReactJs, NodeJs, Express, and I'm well-versed in working with database 

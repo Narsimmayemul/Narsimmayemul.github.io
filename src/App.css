@@ -236,8 +236,8 @@ ham i{
 
 
 .sauce{
-  color: var(--light-red);
-  /* color: white; */
+  /* color: var(--light-red); */
+  color: white;
 }
 /* Hero */
 /* particle-container */
@@ -248,6 +248,7 @@ ham i{
   align-items: center;
   justify-content: center;
   height: 90vh;
+  margin-bottom: 0px;
   max-height: 800px;
   /* min-height: 650px; */
 }
@@ -259,6 +260,7 @@ ham i{
 }
 .txt-light-red{
   color: var(--light-red);
+  /* color: white; */
 }
 .intro{
   width: 100%;
@@ -387,6 +389,12 @@ ham i{
   animation: shine 3s infinite linear;
 }
 
+.tech-stack-div{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: space-evenly;
+ }
+
 @keyframes shine {
   0% {
       background-position: 0;
@@ -461,7 +469,9 @@ ham i{
     padding: 20px 150px;
   }
 
-  
+  #github-stat{
+    flex-direction: column;
+  }
 
 }
 
@@ -475,12 +485,9 @@ ham i{
     margin-top: 15rem;
     margin-left: -5rem;
   }
-  .home-img{
-    /* margin-top: 30px; */
-  }
 
   #about{
-    margin-top: 13rem;
+    margin-top: 25rem;
   }
 
   #github-stat{
@@ -533,6 +540,7 @@ margin: 20px 0px 0px;
 font-size: var(--font-small);
 overflow: hidden;
 list-style: none;
+color: white;
 }
 .skills-list li{
   font-size: var(--font-small);
@@ -608,6 +616,11 @@ list-style: none;
   .company{
     margin: 30px;
   }
+  .tech-stack-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+   }
 }
 /* work */
 
@@ -668,7 +681,13 @@ list-style: none;
   opacity: .9;
   padding-left: 1px;
 }
+.tech-used project-tech-stack{
+  display: flex;
+  flex-wrap: wrap;
+}
 .project-description{
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   background: var(--brown-red);
   position: relative;
   padding: 10px;
@@ -709,6 +728,11 @@ ul.tech-used li{
   .project-card{
       grid-template-columns: repeat(12, 1fr);
   }
+  .tech-stack-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+   }
   .project-img img{
     height: 400px;
   }
@@ -781,18 +805,60 @@ ul.tech-used li{
   display: none;
   position: fixed;
 }
+
+@media screen and (max-width:550px){
+  .tech-stack-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-evenly;
+   }
+}
+@media screen and (min-width:350px){
+  #social-icons{
+    margin: 30px;
+  } 
+}
 @media screen and (min-width:550px){
  #social-icons{
    margin: 30px;
  } 
 
- .home-img{
-  /* margin-top: 100px; */
+ .tech-stack-div{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: space-evenly;
  }
- /* .ham-container{
+
+ .tech-used project-tech-stack{
   display: flex;
- } */
+  flex-wrap: wrap;
 }
+
+}
+
+@media screen and (min-width:350px){
+  .hero{
+    margin-top: 10px;
+  } 
+ 
+  .tech-used project-tech-stack{
+    display: grid;
+    grid-template-columns: repeat(3,1);
+  }
+
+ }
+ @media screen and (min-width:350px){
+  .hero{
+    margin-top: 10px;
+  } 
+ 
+   .tech-used project-tech-stack{
+    display: grid;
+    grid-template-columns: repeat(4,1);
+  }
+
+ }
+
 @media screen and (min-width:800px) {
   #social-icons{
     bottom: 10px;
@@ -814,6 +880,10 @@ ul.tech-used li{
   #contact-email:hover{
     margin-bottom: 20px;
   }
+  .hero{
+    margin-top: 10px;
+  } 
+ 
 }
 
 /* footer */

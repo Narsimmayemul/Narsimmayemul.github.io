@@ -1,17 +1,19 @@
 import React from "react";
-import newPic from "../images/pictures/newPic.jpg";
+// import ima from "../images/ima.jpg";
+// import ig from "../images/pictures/ig.png"
+import ig from "../images/pictures/new.png"
 import Typewriter from "typewriter-effect";
 
 export default function Intro({ handleClick, boolean }) {
   return (
-    <div id="home" className="hero" onClick={() => {
+    <div id="home" className="hero"  onClick={() => {
         if (boolean === false) handleClick();
       }}>
       <div className="home-img-cont">
         <div className="outer-circle circle circle-1">
           <span className="sq sq-1"></span>
           <span className="inner-circle circle" style={{display:"flex" , justifyContent:"center"}}>
-            <img className="home-img" src={newPic} alt="profile" />
+            <img className="home-img" src={ig} alt="profile" />
           </span>
           <span className="sq sq-2"></span>
         </div>

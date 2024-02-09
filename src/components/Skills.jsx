@@ -19,7 +19,7 @@ export const Skills = () => {
         <span className="sauce">Skills</span>
       </h1>
       <div></div>
-        <p data-aos="fade-up">Here are a few Technologies I’ve been working with recently:</p>
+        <p data-aos="fade-up" style={{color:"white"}}>Here are a few Technologies I’ve been working with recently:</p>
           <ul data-aos="fade-up"  className="skills-list">
             <li className="skills-card">
               <div className="skills-card-name" > <DiHtml5 className="skills-card-img" color="rgb(21, 246, 73)" /> HTML</div>
@@ -52,7 +52,7 @@ export const Skills = () => {
               <div className="skills-card-name" ><FaJava className="skills-card-img" fontSize={'27px'} color="rgb(21, 246, 73)"/> Java</div>
             </li>
           </ul>
-        <p data-aos="fade-up" style={{marginTop:'3rem'}}>Here are a few Tools I’ve been working with recently:</p>
+        <p data-aos="fade-up" style={{marginTop:'5rem',color:"white"}}>Here are a few Tools I’ve been working with recently:</p>
           <ul data-aos="fade-up"  className="skills-list">
             <li className="skills-card">
               <div className="skills-card-name" > <FaGitSquare className="skills-card-img" color="rgb(21, 246, 73)"/> Git</div>

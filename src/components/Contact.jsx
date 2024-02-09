@@ -22,7 +22,7 @@ export default function Contact() {
             className="contact-button"
             href="mailto: narsimmayemul49450@gmail.com"
           >
-            Send an email
+            narsimmayemul@gmail.com
           </a>
         </div>
         <div id="contact-phone" className="button-container">
@@ -30,9 +30,29 @@ export default function Contact() {
             className="contact-button"
             href="tel:+917385692206"
           >
-            Give a Ring
+            +917385692206
           </a>
         </div>
+
+
+        <div id="contact-phone" className="button-container">
+          <a
+            className="contact-button"
+            href="https://www.linkedin.com/in/narsimma-yemul-7653781b5/"
+          >
+            Linkedin 
+          </a>
+        </div>
+        <div id="contact-phone" className="button-container">
+          <a
+            className="contact-button"
+            href="https://github.com/Narsimmayemul"
+          >
+            Github 
+          </a>
+        </div>
+
+
       </div>
     </section>
   );

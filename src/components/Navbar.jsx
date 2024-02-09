@@ -1,10 +1,10 @@
-import resume from '../resume/Narsimma_Yemul_Resume 1.pdf'
+import resume from '../resume/NarsimmaYemul.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar({ handleClick, boolean }) {
 
   const handleDownload = () => {
-    window.open('https://drive.google.com/file/d/1Ur6FeFg2nZI6H2CrS94bD9UmdyZ8yjAw/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/11wPk03sPlCPJdtnfbsd1ZeNtBz8CAnFh/view?usp=sharing', '_blank');
   };
 
   // const topwindows = () => {
@@ -24,7 +24,7 @@ export default function Navbar({ handleClick, boolean }) {
         <div className="ham-container">
           <a rel="noreferrer" href={resume} 
           onClick={handleDownload} 
-          download={'Narsimma_Yemul_Resume'} className="contact-button resume-button first-btn">
+          download={'NarsimmaYemul_Resume'} className="contact-button resume-button first-btn">
             Resume
           </a>
           <span className="ham">
@@ -62,7 +62,7 @@ export default function Navbar({ handleClick, boolean }) {
       <a 
       href={resume} 
       onClick={handleDownload} 
-      rel="noreferrer" download={'Narsimma_Yemul_Resume'} id="resume-button-1" className="contact-button nav-link resume resume-button second-btn">
+      rel="noreferrer" download={'NarsimmaYemul_Resume'} id="resume-button-1" className="contact-button nav-link resume resume-button second-btn">
         Resume</a>
     </nav>
   );
