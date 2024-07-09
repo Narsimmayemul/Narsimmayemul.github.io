@@ -38,7 +38,7 @@ export default function getProjects() {
         projectTitle: "Video Chat",
         image:"Video.png",
         projectInfo:
-          "This is a small Project of video chat.in this app 2 Pepole can video chat.i used JavaScript , Node.js , Socket.IO , React , Material UI , Tech Stacks.",
+          "This is a small Project of video chat.in this app 2 Pepole can video chat at same time.i used JavaScript , Node.js , Socket.IO , React , Material UI , Tech Stacks.",
         techUsed: ["Socket.IO", "React","Express","Node.js", "Material UI"],
         projectLinkHosted: "https://658ed836313055ba87a631a5--video-chat-api.netlify.app/",
         projectLinkGithub: "https://github.com/Narsimmayemul/Video-chat-app"
