@@ -1,6 +1,4 @@
 import React from "react";
-// import ima from "../images/ima.jpg";
-// import ig from "../images/pictures/ig.png"
 import ig from "../images/pictures/new.png"
 import Typewriter from "typewriter-effect";
 
@@ -9,7 +7,7 @@ export default function Intro({ handleClick, boolean }) {
     <div id="home" className="hero"  onClick={() => {
         if (boolean === false) handleClick();
       }}>
-      <div className="home-img-cont">
+      <div className="home-img-cont" id="home-image">
         <div className="outer-circle circle circle-1">
           <span className="sq sq-1"></span>
           <span className="inner-circle circle" style={{display:"flex" , justifyContent:"center"}}>
@@ -18,7 +16,7 @@ export default function Intro({ handleClick, boolean }) {
           <span className="sq sq-2"></span>
         </div>
       </div>
-      <div className="intro give-padding contain">
+      <div className="intro give-padding contain" id='introleft'>
         
         <div className="txt-light-red twent">
           Greetings, fellow developers!, Me...
@@ -43,9 +41,9 @@ export default function Intro({ handleClick, boolean }) {
             }}
           />
         </div>
-        <div>
+        <div className="info">
           <div className="info">
-          An enthusiastic Full Stack Web Developer with a strong set of technical skills like HTML, CSS, Javascript, React and nodeJs as well as non-technical skills and a dedication towards creating useful and interactive web applications using MERN stack..
+          An enthusiastic Full Stack Web Developer with a strong set of technical skills like HTML, CSS, Javascript, React and nodeJs as well as non-technical skills and a dedication towards creating useful and interactive web applications using MERN stack...
           </div>
         </div>
         <div className="button-container">

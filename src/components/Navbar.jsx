@@ -1,10 +1,10 @@
-import resume from '../resume/NarsimmaYemul.pdf'
+import resume from '../resume/Narsimma_Yemul_Resume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar({ handleClick, boolean }) {
 
   const handleDownload = () => {
-    window.open('https://drive.google.com/file/d/11wPk03sPlCPJdtnfbsd1ZeNtBz8CAnFh/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/15Dy1O6qtW6jNVGJxOrWrQ0dkoOm1cQKi/view?usp=sharing', '_blank');
   };
 
   // const topwindows = () => {
@@ -15,24 +15,26 @@ export default function Navbar({ handleClick, boolean }) {
 
   return (
     <nav id="nav-menu" onClick={handleClick}>
+      <div className='main-div'>
       <div id="logo-nav">
         <h1 className="nav-link home">
           <a className="sauce name rubber" href="#home">
             Narsimma Yemul
           </a>
         </h1>
+        
         <div className="ham-container">
-          <a rel="noreferrer" href={resume} 
+          {/* <a rel="noreferrer" href={resume} 
           onClick={handleDownload} 
-          download={'NarsimmaYemul_Resume'} className="contact-button resume-button first-btn">
+          download={'Narsimma_Yemul_Resume'} className="contact-button resume-button first-btn">
             Resume
-          </a>
+          </a> */}
           <span className="ham">
             <FontAwesomeIcon icon={boolean ? faBars : faXmark} />
           </span>
         </div>
       </div>
-      <ul className={boolean ? "hide" : ""}>
+      <ul className={boolean ? "hide" : "" }>
         <li >
           <a  href="#home" className="underline">
             Home
@@ -58,12 +60,24 @@ export default function Navbar({ handleClick, boolean }) {
             Contact
           </a>
         </li>
-      </ul>
-      <a 
+      
+         <li className="nav-link contact">
+        <a className='resume-btn'
       href={resume} 
       onClick={handleDownload} 
-      rel="noreferrer" download={'NarsimmaYemul_Resume'} id="resume-button-1" className="contact-button nav-link resume resume-button second-btn">
+      rel="noreferrer" download={'Narsimma_Yemul_Resume'} id="resume-button-1"
+       >
         Resume</a>
+        </li> 
+                
+</ul>
+</div>
+      {/* <a 
+      href={resume} 
+      onClick={handleDownload} 
+      rel="noreferrer" download={'Narsimma_Yemul_Resume'} id="resume-button-1" className="contact-button nav-link resume resume-button second-btn">
+        Resume</a>
+         */}
     </nav>
   );
 }

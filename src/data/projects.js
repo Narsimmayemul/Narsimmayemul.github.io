@@ -6,11 +6,11 @@ export default function getProjects() {
         image:'MineWine.png',
         projectTitle: "MineWine Clone",
         projectInfo:
-         "In this project we have tried to make an Online Wine Ecommerce Website And and added functionally like Signup, Login, Search, Cart page, Payment Page. We used HTML, CSS, JavaScript ,Bootstrap, ES6 Tech Stacks to build this application.",
-
-        techUsed: ["JavaScript", "HTML","CSS", "ES6" , "React"],
-        projectLinkHosted: "https://64dc647497ed712d3fab4cb5--lambent-quokka-6e7d37.netlify.app/index.html",
-        projectLinkGithub: "https://github.com/Vikaschaturvedi167/WineShop_project",
+         "In this project i have tried to make an Online Wine Ecommerce Website And and added functionally like Signup, Login, Search, Cart page, Payment Page. i used React, Chakra UI, Node.Js ,Express, MongoDB ,ES6 Tech Stacks to build this application.",
+           
+        techUsed: ["React", "Chakra UI","Node.Js", "Express" , "MongoDB"],
+        projectLinkHosted: "https://mine-wine.vercel.app/",
+        projectLinkGithub: "https://github.com/Narsimmayemul/Mine_Wine",
       },
       {
         id: 2,
@@ -31,6 +31,17 @@ export default function getProjects() {
         techUsed: ["JavaScript", "HTML", "CSS","Git","Netlify"],
         projectLinkHosted: "https://delightful-phoenix-888d86.netlify.app/",
         projectLinkGithub: "https://github.com/Saurav9284/Unite-5-Project-Female-Beauty-Product-"
+       
+      },
+      {
+        id: 4,
+        projectTitle: "Video Chat",
+        image:"Video.png",
+        projectInfo:
+          "This is a small Project of video chat.in this app 2 Pepole can video chat.i used JavaScript , Node.js , Socket.IO , React , Material UI , Tech Stacks.",
+        techUsed: ["Socket.IO", "React","Express","Node.js", "Material UI"],
+        projectLinkHosted: "https://658ed836313055ba87a631a5--video-chat-api.netlify.app/",
+        projectLinkGithub: "https://github.com/Narsimmayemul/Video-chat-app"
        
       }
     ];

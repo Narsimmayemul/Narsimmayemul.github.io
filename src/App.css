@@ -2,7 +2,6 @@
 
 :root {
   --black: rgb(119, 119, 119);
-  /* --light-red: rgb(21, 246, 73); */
   --light-red: orange;
   --lighter-red:#f8e2dc;
   --brown-red:rgb(27, 25, 25);
@@ -35,17 +34,13 @@ html {
 }
 body {
   position: relative;
-  /* font-family: 'Montserrat', sans-serif, Verdana, Geneva, Tahoma; */
-  /* font-family: cursive; */
   font-family: 'Varela Round', sans-serif;
   
 
   background: #232322;
-  /* background: white; */
   background-size:cover;
   font-size: 18px;
   color: var(--black);
-  /* color: white; */
   overflow-x: hidden;
 }
 .cursor{
@@ -66,6 +61,38 @@ body {
   text-align: center;
   padding: 5px;
 }
+
+/* All Github img */
+#github-stats-card{
+  width: 80%;
+  margin-left: 10%;
+}
+#github-streak-stats{
+  width: 80%;
+  margin-left: 10%;
+}
+#github-top-langs{
+  /* width: 80%; */
+  /* margin-left: 10%; */
+}
+
+.main-div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#resume-button-1{
+  color: aliceblue;
+  margin-right: 5%;
+}
+.hide:last-child{
+  margin-right: 3%;
+}
+@media screen and (min-width:820px){
+  /* home-img-cont{
+    margin-top: 20px; */
+  }
 @media screen and (min-width:820px){
   .cursor{
     display: flex;
@@ -90,9 +117,7 @@ body {
   padding: 0px 25px;
   box-sizing: border-box;
 }
-/* Tools */
 
-/* LINKS */
 a{
   color: var(--black);
   text-decoration:none;
@@ -132,8 +157,9 @@ a:hover{
   top: 0;
   z-index: 10;
   align-items: center;
-  height: auto;
+  height: 100%;
   padding: 10px 15px;
+  width: 100%;
 }
 #logo-nav{
   flex-grow: 1;
@@ -184,7 +210,7 @@ ham i{
   display: none;
 }
 #nav-menu li{
-  margin: 30px 10px;
+  margin: 22% 1px;
   list-style: none;
   cursor: pointer;
   transition: all .4s;
@@ -199,6 +225,72 @@ ham i{
 .second-btn{
   display: none;
 }
+
+@media screen and (max-width: 400px){
+  #about{
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (max-width:850px){
+  #nav-menu{
+    display: flex;
+    width: 100%;
+  }
+}
+@media screen and (max-width:700px){
+
+  #nav-menu{
+    display: flex;
+    width: 100%;
+  }
+  #nav-menu>div{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:800px){
+  #nav-menu{
+    display: flex;
+    width: 100%;
+  }
+  .main-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #nav-menu li {
+    margin: 8% 1px;
+}
+#resume-button-1 {
+  /* color: aliceblue; */
+  margin-right: 0%;
+}
+
+.ham {
+  margin: 0px 30px 0px 0px;
+}
+.name {
+  margin-left: 30px;
+}
+}
+
+@media screen and (max-width:700px){
+
+  #nav-menu li {
+    margin: 9% 1px;
+}
+
+}
+
+@media screen and (max-width:650px){
+  #nav-menu li {
+    margin: 10% 1px;
+}
+}
+
+
+
 @media screen and (min-width:800px){
   .first-btn{
     display: none;
@@ -211,9 +303,10 @@ ham i{
   }
   #nav-menu{
     display: flex;
+    width: 100%;
   }
   #nav-menu li{
-    margin: 0 10px;
+    margin: 0 5px;
   }
   #logo-nav{
     flex-grow: 1;
@@ -234,7 +327,6 @@ ham i{
 }
 /* Navbar */
 
-
 .sauce{
   /* color: var(--light-red); */
   color: white;
@@ -244,19 +336,21 @@ ham i{
 .hero{
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  /* height: 90vh; */
   margin-bottom: 0px;
   max-height: 800px;
-  /* min-height: 650px; */
 }
 /* particle-container */
 .contain{
-  max-width: 1000px;
-  margin: auto;
-  width: 100%;
+  max-width: 90%;
+    margin: 5%;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .txt-light-red{
   color: var(--light-red);
@@ -264,6 +358,7 @@ ham i{
 }
 .intro{
   width: 100%;
+  margin-left: 5rem;
   margin-top: max(60px,5%);
 }
 .twent{
@@ -273,17 +368,17 @@ ham i{
   letter-spacing: 3px;
 }
 .wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; 
+  animation-duration: 2.5s;     
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;    
   display: inline-block;
 }
 
 /* Profile Pic */
 .home-img-cont{
-  margin-right: -5rem;
-  margin-left: 15rem;
+  margin-right: -10%;
+  margin-top: 18rem;
 }
 
 .circle {
@@ -294,14 +389,16 @@ ham i{
   cursor: pointer;
 }
 .outer-circle {
-  width: 365px;
+  width: 340px;
   height: 365px;
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0px 3px 4px rgb(77, 77, 77, 0.46);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
 .inner-circle {
   width: 350px;
@@ -349,12 +446,12 @@ ham i{
 
 @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   10% { transform: rotate(14.0deg) }  
    20% { transform: rotate(-8.0deg) }
    30% { transform: rotate(14.0deg) }
    40% { transform: rotate(-4.0deg) }
    50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+   60% { transform: rotate( 0.0deg) }  
   100% { transform: rotate( 0.0deg) }
 }
 
@@ -368,15 +465,18 @@ ham i{
 .info{
   font-weight: 400;
   font-size: 18px;
-  max-width: 580px;
+  margin-left: 4%;
+  /* max-width:70%; */
   padding-left: 5px;
-  letter-spacing: 2px;
+  letter-spacing:2px;
   color: var(--lighter-red);
 }
 .name{
   color: #f8e2dc;
   font-weight: 500;
   text-shadow: 2px 2px  var(--light-red);
+  display: flex;
+  justify-content: center;
   /* font-family: 'Yellowtail', cursive; */
 }
 .newname {
@@ -384,7 +484,7 @@ ham i{
   background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%)20%);
   font-weight: 600;
   background-clip: text;
-  font-size: 60px;
+  font-size: 50px;
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite linear;
 }
@@ -400,16 +500,11 @@ ham i{
       background-position: 0;
   }
 
-  100% {
-      background-position: 600px;
+  90% {
+      background-position: 400px;
   }
 }
 
-
-/* .home-img-cont:hover{
-  width: 100%;
-  filter: grayscale(10%);
-} */
 
 
 .rubber:hover{
@@ -417,7 +512,6 @@ ham i{
   animation: rubberLater .6s ease-in-out forwards;
   animation-play-state:running;
   color: var(--light-red);
-  /* animation-iteration-count: infinite; */
 }
 @keyframes rubberLater {
   0%{
@@ -448,10 +542,14 @@ ham i{
 }
 .button-container{
   padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact-button{
   color: var(--light-red);
   font-size: var(--font-med);
+  font-size: large;
   padding: 9px;
   border: 1.7px solid var(--light-red);
   border-radius: 7px;
@@ -460,19 +558,30 @@ ham i{
 .contact-button:hover{
   background: rgb(255, 107, 107,.1);
 }
+
+
+
 @media screen and (min-width:700px){
+  #nav-menu li{
+    width: 100%;
+    /* margin: % 10px; */
+    /* height: 100%; */
+  }
 
   .info{
     font-size: 20px;
   }
   .give-padding{
-    padding: 20px 150px;
+    padding: 20px 100px;
   }
 
   #github-stat{
     flex-direction: column;
   }
-
+  #nav-menu{
+    display: flex;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width:700px){
@@ -480,10 +589,12 @@ ham i{
   .hero{
     flex-direction: column;
   }
-
+  #nav-menu{
+    /* display: flex; */
+    width: 100%;
+  }
   .home-img-cont{
-    margin-top: 15rem;
-    margin-left: -5rem;
+    margin-top: 6rem;
   }
 
   #about{
@@ -496,12 +607,19 @@ ham i{
 
 
 }
+#gitHUB{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+}
 
-/* Hero */
-
-/* About Section */
 .sections{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 50px 0;
+  /* align-items: center; */
 }
 .heading{
   text-align: center;
@@ -538,14 +656,31 @@ gap: 20px 30px;
 padding: 0px;
 margin: 20px 0px 0px;
 font-size: var(--font-small);
-overflow: hidden;
+/* overflow: hidden; */
 list-style: none;
 color: white;
+justify-content: space-evenly;
 }
 .skills-list li{
   font-size: var(--font-small);
+  /* justify-content: center; */
 }
 
+.skills-card-img{
+  height: 50px;
+  width: 20%;
+}
+.skills-card-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.skills-card{
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+}
 @media screen and (max-width:700px){
   .skills-list{
     display: grid;
@@ -554,22 +689,13 @@ color: white;
   padding: 0px;
   margin: 20px 0px 0px;
   font-size: var(--font-small);
-  overflow: hidden;
+  /* overflow: hidden; */
   list-style: none;
   }
 
 }
 
-/* .skills-list li::before {
-  content: "▹  ";
-  left: 0px;
-  color: var(--light-red);
-  font-size: 30px;
-  line-height: 12px;
-} */
-/* About Section */
 
-/* work */
 .company{
   display: flex;
   flex-direction: column;
@@ -632,6 +758,7 @@ color: white;
   border-radius: 10px;
   /* margin-bottom: 10px; */
   overflow: hidden;
+  /* margin-left: 10%; */
 }
 .project-img{
   /* grid-area: 1 / 4 / -1 / -1; */
@@ -725,6 +852,15 @@ ul.tech-used li{
   scale: 1.2;
 }
 @media screen and (min-width:800px){
+  #nav-menu{
+    display: flex;
+    width: 100%;
+  }
+  .main-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
   .project-card{
       grid-template-columns: repeat(12, 1fr);
   }
@@ -806,18 +942,233 @@ ul.tech-used li{
   position: fixed;
 }
 
+
+@media screen and (min-width:550px){
+ .intro give-padding contain{
+  /* margin-left: 0px; */
+ }
+  #about{
+    margin-top: 10rem;
+  }
+  
+
+}
+
+
+@media screen and (max-width: 350px){
+  #nav-menu li{
+    width: 110%;
+    margin: 75% 1px;
+    height: 100%;
+  }
+  #nav-menu>div{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  #nav-menu li{
+    width: 100%;
+    margin: 11% 0px;
+    height: 100%;
+  }
+  #nav-menu>div{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:550px){
+  #nav-menu li {
+    margin: 12% 1px;
+}
+}
+
+
+@media screen and (max-width: 500px){
+  #nav-menu li{
+    margin: 13% 0px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 460px){
+  #nav-menu li{
+    width: 100%;
+    /* margin: 60% 10px; */
+    margin: 15% 1px;
+    height: 100%;
+  }
+  #nav-menu>div{
+    display: flex;
+    flex-direction: column;
+  }
+  #home-image{
+    margin-right: -5%;
+    margin-top: 13rem;
+  }
+  #about{
+    margin-top: 20rem;
+  }
+  #projects{
+    margin-left: 8%;
+  }
+  .skills-list{
+    /* margin-left: 10%; */
+  }
+  .twent{
+
+    margin-left: 50px;
+  }
+  .newname{
+    margin-left: 50px;
+  }
+  .Typewriter__wrapper{
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  #home-image{
+    margin-left: -20%;
+  }
+  #about{
+    margin-top: 18rem;
+  }
+  .outer-circle{
+    margin-left: -15px;
+  }
+}
+
+
+@media screen and (max-width: 400px){
+  #nav-menu li{
+    width: 100%;
+    margin: 17% 1px;
+    /* height: 100%; */
+  }
+  #about{
+    margin-top: 25rem;
+  }
+  #home-image{
+    margin-left: -15%;
+    
+    margin-top: 18rem;
+  }
+  .newname{
+    margin-left: 6%;
+  }
+  .Typewriter__wrapper{
+    margin-left: 8%;
+  }
+  .twent{
+    margin-left: 10%;
+  }
+}
+
+
+@media screen and (max-width: 400px){
+  #home-image{
+    margin-left: -20px
+  }
+  .button-container{
+    /* margin-bottom: 200px; */
+  }
+  #about{
+    /* margin-top: 30rem; */
+  }
+}
+
+@media screen and (max-width: 380px){
+#home-image {
+    margin-left: -9%;
+}
+}
+
+@media screen and (max-width: 360px){
+  #home-image {
+      margin-left: -15%;
+  }
+  }
+  @media screen and (max-width: 350px){
+    #home-image {
+        margin-left: -2%;
+    }
+    }
+
+  @media screen and (max-width: 330px){
+    #home-image {
+        margin-left: -3%;
+    }
+    }
+
+
+
+@media screen and (max-width:350px){
+  #nav-menu li {
+    margin: 19% 0px;
+}
+}
+
+@media screen and (max-width:1000px){
+  #about{
+    margin-top: 15rem;
+  }
+}
 @media screen and (max-width:550px){
   .tech-stack-div{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: space-evenly;
    }
+
+   .home-img-cont{
+    margin-top: 8rem;
+    margin-left: 2%;
+    width: 70%;
+  }
+
+  
+  #about{
+    /* margin-top: 9rem;
+     */
+     margin-top: 15rem;
+    margin-left: 10%;
+  }
+
+}
+@media screen and (max-width:350px){
+  .tech-stack-div {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+}
 }
 @media screen and (min-width:350px){
   #social-icons{
     margin: 30px;
   } 
+  /* .home-img-cont{
+    margin-top: 10rem;
+    margin-left: -2.5rem;
+  } */
+  .tech-stack-div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+   }
 }
+
 @media screen and (min-width:550px){
  #social-icons{
    margin: 30px;
@@ -825,7 +1176,7 @@ ul.tech-used li{
 
  .tech-stack-div{
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(4,1fr);
   justify-content: space-evenly;
  }
 
@@ -847,9 +1198,16 @@ ul.tech-used li{
   }
 
  }
+ @media screen and (max-width:800px){
+  .hero{
+    margin-top: 10px;
+    margin-left: -9%;
+  } 
+ }
  @media screen and (min-width:350px){
   .hero{
     margin-top: 10px;
+    margin-left: -9%;
   } 
  
    .tech-used project-tech-stack{
@@ -871,10 +1229,12 @@ ul.tech-used li{
     scale: 1.2;
   }
  #contact-email{
+  margin-bottom: -1rem;
     display: block;
     position: fixed;
     bottom: 180px;
     right: -70px;
+    margin-right: -18px;
     transform: rotate(90deg);
   }
   #contact-email:hover{
@@ -883,7 +1243,14 @@ ul.tech-used li{
   .hero{
     margin-top: 10px;
   } 
- 
+ #introleft{
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12%;
+ }
 }
 
 /* footer */

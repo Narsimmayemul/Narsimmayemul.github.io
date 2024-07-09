@@ -10,7 +10,7 @@ export const Github = () => {
   }, []);
 
   return (
-    <section data-aos="fade-up" className="sections">
+    <section data-aos="fade-up" className="sections" id="gitHUB">
       <h1 className="heading"><span className="sauce"> My Contributions and Stats</span></h1>
       <div data-aos="fade-up">
 
